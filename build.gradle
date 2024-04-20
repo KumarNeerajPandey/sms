@@ -1,0 +1,50 @@
+plugins {
+	id 'java'
+	id 'application'
+}
+
+// Set Main Class
+application {
+	mainClass = 'com.infinira.sms.test.TestStudent'
+}
+
+//Set Java Compatibility
+java {
+	sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
+
+// Define source directories
+sourceSets {
+	main {
+		java {
+			srcDirs = ['src/main/java']	
+		}
+	}
+	test {
+		java {
+			srcDirs = ['src/test/java']
+		}
+	}
+}
+
+// Define dependencies
+dependencies {
+    implementation fileTree(dir: "lib", include: ['postgresql-42.7.2.jar','log4j-core-2.23.1.jar', 'log4j-api-2.23.1.jar'])
+}
+
+// Define task to compile java source code
+task compileTest(type: JavaCompile) {
+    source = sourceSets.test.java
+    destinationDirectory = file('build/test/java')
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+// Define task for executing main code
+task runMain(type: JavaExec) {
+    mainClass = 'com.infinira.sms.test.TestStudent'
+	classpath = sourceSets.test.runtimeClasspath + files('config')
+}
+
+// Set default tasks
+defaultTasks 'runMain'

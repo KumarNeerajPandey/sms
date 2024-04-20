@@ -1,0 +1,121 @@
+[#2024-04-18 17:53:02,386 [main] [INFO] com.infinira.sms.util.LoggerService - "Requested student ID 13 details successfully deleted.#]
+[#2024-04-18 18:02:13,388 [main] [ERROR] com.infinira.sms.util.LoggerService - Student with ID 3 not found in the database. com.infinira.sms.util.SMSException: Student with ID 3 not found in the database.
+	at com.infinira.sms.util.SMSUtil.throwException(SMSUtil.java:35)
+	at com.infinira.sms.dao.StudentDAO.updateStudent(StudentDAO.java:97)
+	at com.infinira.sms.service.StudentService.updateStudent(StudentService.java:18)
+	at com.infinira.sms.test.TestStudent.updateStudent(TestStudent.java:90)
+	at com.infinira.sms.test.TestStudent.main(TestStudent.java:34)
+#]
+[#2024-04-18 18:05:12,497 [main] [ERROR] com.infinira.sms.util.LoggerService - Student with ID 3 not found in the database. com.infinira.sms.util.SMSException: Student with ID 3 not found in the database.
+	at com.infinira.sms.util.SMSUtil.throwException(SMSUtil.java:35)
+	at com.infinira.sms.dao.StudentDAO.updateStudent(StudentDAO.java:97)
+	at com.infinira.sms.service.StudentService.updateStudent(StudentService.java:18)
+	at com.infinira.sms.test.TestStudent.updateStudent(TestStudent.java:90)
+	at com.infinira.sms.test.TestStudent.main(TestStudent.java:34)
+#]
+[#2024-04-18 18:14:49,612 [main] [ERROR] com.infinira.sms.util.LoggerService - Update failed: Student with ID 3 not found. com.infinira.sms.util.SMSException: Update failed: Student with ID 3 not found.
+	at com.infinira.sms.util.SMSUtil.throwException(SMSUtil.java:35)
+	at com.infinira.sms.dao.StudentDAO.updateStudent(StudentDAO.java:96)
+	at com.infinira.sms.service.StudentService.updateStudent(StudentService.java:18)
+	at com.infinira.sms.test.TestStudent.updateStudent(TestStudent.java:90)
+	at com.infinira.sms.test.TestStudent.main(TestStudent.java:34)
+#]
+[#2024-04-18 18:39:38,955 [main] [ERROR] com.infinira.sms.util.LoggerService - Update failed: Student with ID 3 not found. com.infinira.sms.util.SMSException: Update failed: Student with ID 3 not found.
+	at com.infinira.sms.util.SMSUtil.throwException(SMSUtil.java:35)
+	at com.infinira.sms.dao.StudentDAO.updateStudent(StudentDAO.java:92)
+	at com.infinira.sms.service.StudentService.updateStudent(StudentService.java:18)
+	at com.infinira.sms.test.TestStudent.updateStudent(TestStudent.java:90)
+	at com.infinira.sms.test.TestStudent.main(TestStudent.java:34)
+#]
+[#2024-04-18 18:41:16,732 [main] [INFO] com.infinira.sms.util.LoggerService - Student details with ID 12 successfully deleted.#]
+[#2024-04-18 19:03:51,370 [main] [ERROR] com.infinira.sms.util.LoggerService - Deletion failed: Student with ID 12 not found. com.infinira.sms.util.SMSException: Deletion failed: Student with ID 12 not found.
+	at com.infinira.sms.util.SMSUtil.throwException(SMSUtil.java:35)
+	at com.infinira.sms.dao.StudentDAO.deleteStudent(StudentDAO.java:161)
+	at com.infinira.sms.service.StudentService.deleteStudent(StudentService.java:33)
+	at com.infinira.sms.test.TestStudent.deleteStudent(TestStudent.java:153)
+	at com.infinira.sms.test.TestStudent.main(TestStudent.java:42)
+#]
+[#2024-04-18 19:04:05,810 [main] [ERROR] com.infinira.sms.util.LoggerService - Failed to create student details for Neeraj Pandey. com.infinira.sms.util.SMSException: Failed to create student details for Neeraj Pandey.
+	at com.infinira.sms.util.SMSUtil.throwException(SMSUtil.java:35)
+	at com.infinira.sms.dao.StudentDAO.insertStudent(StudentDAO.java:63)
+	at com.infinira.sms.service.StudentService.insertStudent(StudentService.java:13)
+	at com.infinira.sms.test.TestStudent.insertStudent(TestStudent.java:67)
+	at com.infinira.sms.test.TestStudent.main(TestStudent.java:31)
+Caused by: org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "student_phone_key"
+  Detail: Key (phone)=(+91 7923792232) already exists.
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:155)
+	at com.infinira.sms.dao.StudentDAO.insertStudent(StudentDAO.java:55)
+	... 3 more
+#]
+[#2024-04-18 19:04:14,173 [main] [ERROR] com.infinira.sms.util.LoggerService - Failed to create student details for Neeraj Pandey. com.infinira.sms.util.SMSException: Failed to create student details for Neeraj Pandey.
+	at com.infinira.sms.util.SMSUtil.throwException(SMSUtil.java:35)
+	at com.infinira.sms.dao.StudentDAO.insertStudent(StudentDAO.java:63)
+	at com.infinira.sms.service.StudentService.insertStudent(StudentService.java:13)
+	at com.infinira.sms.test.TestStudent.insertStudent(TestStudent.java:67)
+	at com.infinira.sms.test.TestStudent.main(TestStudent.java:31)
+Caused by: org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "student_phone_key"
+  Detail: Key (phone)=(+91 7923792232) already exists.
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:155)
+	at com.infinira.sms.dao.StudentDAO.insertStudent(StudentDAO.java:55)
+	... 3 more
+#]
+[#2024-04-18 20:24:26,959 [main] [ERROR] com.infinira.sms.util.LoggerService - Failed to create student details for Neeraj Pandey. com.infinira.sms.util.SMSException: Failed to create student details for Neeraj Pandey.
+	at com.infinira.sms.util.SMSUtil.throwException(SMSUtil.java:38)
+	at com.infinira.sms.dao.StudentDAO.insertStudent(StudentDAO.java:63)
+	at com.infinira.sms.service.StudentService.insertStudent(StudentService.java:13)
+	at com.infinira.sms.test.TestStudent.insertStudent(TestStudent.java:67)
+	at com.infinira.sms.test.TestStudent.main(TestStudent.java:31)
+Caused by: org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "student_phone_key"
+  Detail: Key (phone)=(+91 7923792232) already exists.
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:155)
+	at com.infinira.sms.dao.StudentDAO.insertStudent(StudentDAO.java:55)
+	... 3 more
+#]
+[#2024-04-18 20:24:56,537 [main] [ERROR] com.infinira.sms.util.LoggerService - Deletion failed: Student with ID 12 not found.#]
+[#2024-04-18 20:24:56,545 [main] [ERROR] com.infinira.sms.util.LoggerService - Deletion failed: Student with ID 12 not found. com.infinira.sms.util.SMSException: Deletion failed: Student with ID 12 not found.
+	at com.infinira.sms.util.SMSUtil.throwException(SMSUtil.java:38)
+	at com.infinira.sms.dao.StudentDAO.deleteStudent(StudentDAO.java:161)
+	at com.infinira.sms.service.StudentService.deleteStudent(StudentService.java:33)
+	at com.infinira.sms.test.TestStudent.deleteStudent(TestStudent.java:153)
+	at com.infinira.sms.test.TestStudent.main(TestStudent.java:42)
+#]
+[#2024-04-18 20:24:56,548 [main] [INFO] com.infinira.sms.util.LoggerService - Student details with ID 12 successfully deleted.#]
+[#2024-04-18 20:25:58,108 [main] [ERROR] com.infinira.sms.util.LoggerService - Deletion failed: Student with ID 12 not found.#]
+[#2024-04-18 20:25:58,116 [main] [ERROR] com.infinira.sms.util.LoggerService - Deletion failed: Student with ID 12 not found.#]
+[#2024-04-18 20:25:58,116 [main] [ERROR] com.infinira.sms.util.LoggerService - Deletion failed: Student with ID 12 not found. com.infinira.sms.util.SMSException: Deletion failed: Student with ID 12 not found.
+	at com.infinira.sms.util.SMSUtil.throwException(SMSUtil.java:38)
+	at com.infinira.sms.dao.StudentDAO.deleteStudent(StudentDAO.java:161)
+	at com.infinira.sms.service.StudentService.deleteStudent(StudentService.java:33)
+	at com.infinira.sms.test.TestStudent.deleteStudent(TestStudent.java:153)
+	at com.infinira.sms.test.TestStudent.main(TestStudent.java:42)
+#]
+[#2024-04-18 20:25:58,120 [main] [INFO] com.infinira.sms.util.LoggerService - Student details with ID 12 successfully deleted.#]
+[#2024-04-18 20:26:35,650 [main] [ERROR] com.infinira.sms.util.LoggerService - Deletion failed: Student with ID 12 not found.#]
+[#2024-04-18 20:26:35,658 [main] [ERROR] com.infinira.sms.util.LoggerService - Deletion failed: Student with ID 12 not found. com.infinira.sms.util.SMSException: Deletion failed: Student with ID 12 not found.
+	at com.infinira.sms.util.SMSUtil.throwException(SMSUtil.java:34)
+	at com.infinira.sms.dao.StudentDAO.deleteStudent(StudentDAO.java:161)
+	at com.infinira.sms.service.StudentService.deleteStudent(StudentService.java:33)
+	at com.infinira.sms.test.TestStudent.deleteStudent(TestStudent.java:153)
+	at com.infinira.sms.test.TestStudent.main(TestStudent.java:42)
+#]
+[#2024-04-18 20:26:35,661 [main] [INFO] com.infinira.sms.util.LoggerService - Student details with ID 12 successfully deleted.#]
+[#2024-04-18 20:27:23,630 [main] [ERROR] com.infinira.sms.util.LoggerService - Deletion failed: Student with ID 12 not found.#]
+[#2024-04-18 20:27:23,639 [main] [INFO] com.infinira.sms.util.LoggerService - Student details with ID 12 successfully deleted.#]
