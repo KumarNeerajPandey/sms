@@ -1,0 +1,130 @@
+2024-04-16 14:00:54,843 [main] [INFO] com.infinira.sms.util.LoggerService - Executing insert Student method.
+2024-04-16 14:00:54,938 [main] [ERROR] com.infinira.sms.util.LoggerService - Failed to create student detail for student [Neeraj] org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "student_phone_key"
+  Detail: Key (phone)=(+91 7923792232) already exists.
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:155)
+	at com.infinira.sms.dao.StudentDAO.insertStudent(StudentDAO.java:55)
+	at com.infinira.sms.service.StudentService.insertStudent(StudentService.java:14)
+	at com.infinira.sms.test.TestStudent.insertStudent(TestStudent.java:67)
+	at com.infinira.sms.test.TestStudent.main(TestStudent.java:31)
+
+2024-04-16 14:01:00,324 [main] [INFO] com.infinira.sms.util.LoggerService - Executing insert Student method.
+2024-04-16 14:01:00,412 [main] [ERROR] com.infinira.sms.util.LoggerService - Failed to create student detail for student [Neeraj] org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "student_phone_key"
+  Detail: Key (phone)=(+91 7923792232) already exists.
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:155)
+	at com.infinira.sms.dao.StudentDAO.insertStudent(StudentDAO.java:55)
+	at com.infinira.sms.service.StudentService.insertStudent(StudentService.java:14)
+	at com.infinira.sms.test.TestStudent.insertStudent(TestStudent.java:67)
+	at com.infinira.sms.test.TestStudent.main(TestStudent.java:31)
+
+2024-04-16 14:01:05,743 [main] [INFO] com.infinira.sms.util.LoggerService - Executing insert Student method.
+2024-04-16 14:01:05,831 [main] [ERROR] com.infinira.sms.util.LoggerService - Failed to create student detail for student [Neeraj] org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "student_phone_key"
+  Detail: Key (phone)=(+91 7923792232) already exists.
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:155)
+	at com.infinira.sms.dao.StudentDAO.insertStudent(StudentDAO.java:55)
+	at com.infinira.sms.service.StudentService.insertStudent(StudentService.java:14)
+	at com.infinira.sms.test.TestStudent.insertStudent(TestStudent.java:67)
+	at com.infinira.sms.test.TestStudent.main(TestStudent.java:31)
+
+[#2024-04-16 14:03:02,260 [main] [INFO] com.infinira.sms.util.LoggerService - Executing insert Student method.#]
+[#2024-04-16 14:03:02,355 [main] [ERROR] com.infinira.sms.util.LoggerService - Failed to create student detail for student [Neeraj] org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "student_phone_key"
+  Detail: Key (phone)=(+91 7923792232) already exists.
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:155)
+	at com.infinira.sms.dao.StudentDAO.insertStudent(StudentDAO.java:55)
+	at com.infinira.sms.service.StudentService.insertStudent(StudentService.java:14)
+	at com.infinira.sms.test.TestStudent.insertStudent(TestStudent.java:67)
+	at com.infinira.sms.test.TestStudent.main(TestStudent.java:31)
+#]
+[#2024-04-16 17:14:45,616 [main] [ERROR] com.infinira.sms.util.LoggerService - Neeraj can not be null. org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "student_phone_key"
+  Detail: Key (phone)=(+91 7923792232) already exists.
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:155)
+	at com.infinira.sms.dao.StudentDAO.insertStudent(StudentDAO.java:55)
+	at com.infinira.sms.service.StudentService.insertStudent(StudentService.java:14)
+	at com.infinira.sms.test.TestStudent.insertStudent(TestStudent.java:67)
+	at com.infinira.sms.test.TestStudent.main(TestStudent.java:31)
+#]
+[#2024-04-16 17:24:17,613 [main] [ERROR] com.infinira.sms.util.LoggerService - Neeraj can not be null. org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "student_phone_key"
+  Detail: Key (phone)=(+91 7923792232) already exists.
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:155)
+	at com.infinira.sms.dao.StudentDAO.insertStudent(StudentDAO.java:55)
+	at com.infinira.sms.service.StudentService.insertStudent(StudentService.java:14)
+	at com.infinira.sms.test.TestStudent.insertStudent(TestStudent.java:67)
+	at com.infinira.sms.test.TestStudent.main(TestStudent.java:31)
+#]
+[#2024-04-16 17:42:43,541 [main] [ERROR] com.infinira.sms.util.LoggerService - Neeraj can not be null. org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "student_phone_key"
+  Detail: Key (phone)=(+91 7923792232) already exists.
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:155)
+	at com.infinira.sms.dao.StudentDAO.insertStudent(StudentDAO.java:55)
+	at com.infinira.sms.service.StudentService.insertStudent(StudentService.java:14)
+	at com.infinira.sms.test.TestStudent.insertStudent(TestStudent.java:67)
+	at com.infinira.sms.test.TestStudent.main(TestStudent.java:31)
+#]
+[#2024-04-16 17:46:30,714 [main] [ERROR] com.infinira.sms.util.LoggerService - "Failed to create student detail for student [Neeraj Pandey]." org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "student_phone_key"
+  Detail: Key (phone)=(+91 7923792232) already exists.
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:155)
+	at com.infinira.sms.dao.StudentDAO.insertStudent(StudentDAO.java:55)
+	at com.infinira.sms.service.StudentService.insertStudent(StudentService.java:14)
+	at com.infinira.sms.test.TestStudent.insertStudent(TestStudent.java:67)
+	at com.infinira.sms.test.TestStudent.main(TestStudent.java:31)
+#]
+[#2024-04-16 17:47:49,341 [main] [ERROR] com.infinira.sms.util.LoggerService - "Failed to create student detail for student [Neeraj Pandey]." org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "student_phone_key"
+  Detail: Key (phone)=(+91 7923792232) already exists.
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:155)
+	at com.infinira.sms.dao.StudentDAO.insertStudent(StudentDAO.java:55)
+	at com.infinira.sms.service.StudentService.insertStudent(StudentService.java:14)
+	at com.infinira.sms.test.TestStudent.insertStudent(TestStudent.java:67)
+	at com.infinira.sms.test.TestStudent.main(TestStudent.java:31)
+#]

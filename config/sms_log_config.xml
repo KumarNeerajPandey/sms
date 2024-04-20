@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="info">
+	<Properties>
+		<Property name = "layout">[#%d [%t] [%level] %logger - %m%ex#]%n</Property>
+	</Properties>
+    <Appenders>
+        <Console name = "Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="${layout}"/>
+        </Console>
+		<RollingFile name="Logfile" fileName="./logs/sms.log"
+                     filePattern="./logs/sms-%d{yyyy-MM-dd}.log">
+            <PatternLayout pattern="${layout}"/>
+            <Policies>
+                  <SizeBasedTriggeringPolicy size="10 KB" />
+            </Policies>
+        </RollingFile>	
+    </Appenders>
+    <Loggers>
+        <Root level="info">
+			<AppenderRef ref="Logfile"/>
+            <AppenderRef ref="Console"/>
+        </Root>
+    </Loggers>
+</Configuration>
+
