@@ -137,7 +137,11 @@ public class StudentDAO {
                 student.setCity(rs.getString(CITY));
                 student.setState(rs.getString(STATE));
                 student.setCountry(rs.getString(COUNTRY));
-                student.setPostalCode(rs.getString(POSTAL_CODE));                
+                student.setPostalCode(rs.getString(POSTAL_CODE)); 				
+				java.sql.Timestamp createdDate = rs.getTimestamp(CREATED_DATE);
+				java.sql.Timestamp updatedDate = rs.getTimestamp(UPDATED_DATE);
+				student.setCreatedDate(createdDate);
+				student.setUpdatedDate(updatedDate);	               
             }
         } catch (SQLException ex) {
 			throw Util.getException("SMS_005",ex,true,student.getStudentID());
@@ -204,7 +208,11 @@ public class StudentDAO {
                 student.setCity(rs.getString(CITY));
                 student.setState(rs.getString(STATE));
                 student.setCountry(rs.getString(COUNTRY));
-                student.setPostalCode(rs.getString(POSTAL_CODE));
+                student.setPostalCode(rs.getString(POSTAL_CODE));				
+				java.sql.Timestamp createdDate = rs.getTimestamp(CREATED_DATE);
+				java.sql.Timestamp updatedDate = rs.getTimestamp(UPDATED_DATE);
+				student.setCreatedDate(createdDate);
+				student.setUpdatedDate(updatedDate);	
 				
 				allStudents.add(student);
             }

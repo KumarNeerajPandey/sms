@@ -39,3 +39,16 @@ create table if not exists student(
   modified_date timestamp default now() not null, 
   constraint student_id_pk primary key(student_id)
 );
+
+CREATE OR REPLACE FUNCTION set_updated_date()
+RETURNS TRIGGER AS $$
+BEGIN
+    NEW.updated_date := CURRENT_TIMESTAMP;
+    RETURN NEW;
+END;
+$$ LANGUAGE plpgsql;
+
+CREATE TRIGGER update_updated_date_trigger
+BEFORE UPDATE ON student
+FOR EACH ROW
+EXECUTE FUNCTION set_updated_date();
