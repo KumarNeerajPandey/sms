@@ -6,7 +6,7 @@ INSERT INTO student (
     'Neeraj', 'Kumar', 'Pandey', '1990-09-3', 'MALE',
     '7416621236', 'neeraj@gmail.com', 'MP Pandey', '9039556461',
     'PAN', 'CXZPP7689L', 'India'
-);
+);;
 
 
 INSERT INTO address (
